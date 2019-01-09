@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PaperBoy.Pages.SettingsPage"
+             Title="Settings">
+    <ContentPage.Content>
+        <StackLayout Margin="40" Spacing="20">
+            <Label Text="Ajust your apps settings and preferences as needed."
+                FontSize="Large"/>
+
+            <Label Text="Maximum articles to display: " />
+            <Slider x:Name="articleCountSlider" Minimum="0" Maximum="20" />
+            
+            <Label Text="Enter your Display name: "/>
+            <Entry x:Name="DisplayNameEntry" />
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

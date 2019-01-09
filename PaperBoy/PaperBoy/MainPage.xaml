@@ -1,14 +1,14 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+﻿<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:PaperBoy"
-             x:Class="PaperBoy.MainPage">
+             xmlns:pages="clr-namespace:PaperBoy.Pages"
+             x:Class="PaperBoy.MainPage"
+            Title="Home">
+    <TabbedPage.ToolbarItems>
+        <ToolbarItem  Text="settings" Clicked="ToolbarItem_Clicked"/>
+    </TabbedPage.ToolbarItems>
+    <pages:TrendingPage Title="Trending"/>
+    <pages:WorldPage Title="World page"/>
+    <pages:TechnologyPage Title="Technology"/>
 
-    <StackLayout>
-        <!-- Place new controls here -->
-    	<Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
-    </StackLayout>
-
-</ContentPage>
+</TabbedPage>
