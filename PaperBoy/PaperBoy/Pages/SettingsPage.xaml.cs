@@ -16,5 +16,20 @@ namespace PaperBoy.Pages
 		{
 			InitializeComponent ();
 		}
+
+        protected override void OnAppearing()
+        {
+            InitializeSettings();
+
+            base.OnAppearing();
+        }
+
+        private void InitializeSettings()
+        {
+            displayNameEntry.Text = "Roma";
+            bioEditor.Text = "Roma has been developping Microsoft enterprise solution for organization.";
+            articleCountSlider.Value = 10;
+            categoryPicker.SelectedIndex = 1;
+        }
 	}
 }

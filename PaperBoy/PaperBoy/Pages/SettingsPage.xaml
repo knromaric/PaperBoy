@@ -12,8 +12,26 @@
             <Slider x:Name="articleCountSlider" Minimum="0" Maximum="20" />
             
             <Label Text="Enter your Display name: "/>
-            <Entry x:Name="DisplayNameEntry" />
-            
+            <Entry x:Name="displayNameEntry" />
+            <Image HeightRequest="100" Aspect="AspectFit" Source="https://vignette.wikia.nocookie.net/supermarioandfriendsnewadventure/images/3/33/81631221d8e826d1c6123a.jpg/revision/latest?cb=20130411210658"/>  
+            <Label Text="My Bio"/>
+            <Editor HeightRequest="160" x:Name="bioEditor"/>
+
+            <Label Text="Select default news category: "/>
+            <Picker x:Name="categoryPicker">
+                <Picker.Items>
+                    <x:String>Business</x:String>
+                    <x:String>Science And Technology</x:String>
+                    <x:String>Health</x:String>
+                    <x:String>Politics</x:String>
+                    <x:String>Entertainment</x:String>
+                    <x:String>Sports</x:String>
+                    <x:String>World</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <Button Text="Save" />
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
